@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import "./globals.css";
 import React from "react";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Suspense } from "react";
+import Background from "./components/background";
 
 export const metadata: Metadata = {
   title: "Kais Jessa",
@@ -19,13 +18,21 @@ export default function RootLayout({
 }>) {
   return (
     <React.StrictMode>
-    <html data-theme="light" lang="en">
-      <body className={inter.className}>
-        <Header />
-        {children}
-        <Footer />
+      <html data-theme="light" lang="en">
+        <head></head>
+        <body>
+          <Suspense
+            fallback={
+              <span className="loading loading-spinner loading-lg"></span>
+            }
+          >
+            <Background />
+            <Header />
+            {children}
+            <Footer />
+          </Suspense>
         </body>
-    </html>
+      </html>
     </React.StrictMode>
   );
 }
