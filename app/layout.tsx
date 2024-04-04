@@ -4,7 +4,6 @@ import Header from "./components/header";
 import "./globals.css";
 import React from "react";
 import { Suspense } from "react";
-import Background from "./components/background";
 
 export const metadata: Metadata = {
   title: "Kais Jessa",
@@ -20,13 +19,12 @@ export default function RootLayout({
     <React.StrictMode>
       <html data-theme="light" lang="en">
         <head></head>
-        <body>
+        <body className="bg-pattern">
           <Suspense
             fallback={
               <span className="loading loading-spinner loading-lg"></span>
             }
           >
-            <Background />
             <Header />
             {children}
             <Footer />

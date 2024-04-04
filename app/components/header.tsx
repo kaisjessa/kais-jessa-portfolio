@@ -21,7 +21,7 @@ const Socials = () => {
 
 const Header = () => {
   return (
-    <header className="navbar z-20 sticky top-0">
+    <header className="navbar z-20 bg-base-100 sticky top-0 bg-opacity-100">
       <div className="navbar bg-base">
         <div className="navbar-start">
           <Socials />
