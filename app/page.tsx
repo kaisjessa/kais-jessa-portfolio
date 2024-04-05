@@ -4,8 +4,10 @@ import Profile from "./components/profile";
 export default function Home() {
   return (
     <>
-      <Profile />
-      <About />
+      <div className="flex flex-col">
+        <Profile />
+        <About />
+      </div>
     </>
   );
 }
