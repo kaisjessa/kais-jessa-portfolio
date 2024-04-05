@@ -19,16 +19,10 @@ export default function RootLayout({
     <React.StrictMode>
       <html data-theme="light" lang="en">
         <head></head>
-        <body className="bg-pattern">
-          <Suspense
-            fallback={
-              <span className="loading loading-spinner loading-lg"></span>
-            }
-          >
-            <Header />
-            {children}
-            <Footer />
-          </Suspense>
+        <body className="bg-pattern bg-base-200">
+          <Header />
+          {children}
+          <Footer />
         </body>
       </html>
     </React.StrictMode>

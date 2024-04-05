@@ -7,13 +7,13 @@ const Socials = () => {
   return (
     <div className="flex gap-2 ">
       <Link href="https://github.com/kaisjessa" passHref>
-        <FaGithub className="size-6 lg:size-10" />
+        <FaGithub className="size-5 md:size-10" />
       </Link>
       <Link href="https://www.linkedin.com/in/kais-jessa/" passHref>
-        <FaLinkedin className="size-6 lg:size-10" />
+        <FaLinkedin className="size-5 md:size-10" />
       </Link>
       <Link href="mailto:kaisjessa@gmail.com" passHref>
-        <MdEmail className="size-6 lg:size-10" />
+        <MdEmail className="size-5 md:size-10" />
       </Link>
     </div>
   );
@@ -27,16 +27,18 @@ const Header = () => {
           <Socials />
         </div>
         <div className="navbar-center">
-          <h1 className="normal-case text-3xl font-bold">Kais Jessa</h1>
+          <h1 className="normal-case text-2xl md:text-3xl font-bold">
+            Kais Jessa
+          </h1>
         </div>
         <div className="navbar-end">
-          <FaSun className="m-1 size-6 lg:size-8" />
+          <FaSun className="m-1 size-5 md:size-8" />
           <input
             type="checkbox"
             value="dark"
-            className="toggle theme-controller"
+            className="toggle toggle-sm theme-controller md:toggle-md"
           />
-          <FaMoon className="m-1 size-6 lg:size-8" />
+          <FaMoon className="m-1 size-5 md:size-8" />
         </div>
       </div>
     </header>

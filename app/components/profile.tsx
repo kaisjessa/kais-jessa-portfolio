@@ -1,26 +1,24 @@
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import Image from "next/image";
 
 const Profile = () => {
   return (
     <div className="hero flex-col">
-      <div className="card p-8 m-8 bg-base-100 shadow-xl hero-content flex-col md:flex-row">
+      <div className="card mt-8 mb-4 bg-base-100 shadow-xl hero-content flex-col md:flex-row">
         <div
           className="tooltip tooltip-bottom hover:tooltip-open"
           data-tip="Kais Jessa"
         >
-          <Suspense fallback={<span className="skeleton w-700 h-700"></span>}>
-            <Image
-              className="max-w-sm rounded-lg shadow-2xl snap-center"
-              src="/profile.jpg"
-              width={700}
-              height={700}
-              alt={"Kais Jessa"}
-            />
-          </Suspense>
+          <Image
+            className="max-w-sm rounded-lg shadow-lg snap-center"
+            src="/profile.jpg"
+            width={300}
+            height={300}
+            alt={"Kais Jessa"}
+          />
         </div>
-        <div className="text-center m-8 p-8">
-          <h1 className="text-6xl font-bold font-outline-4">Kais Jessa</h1>
+        <div className="text-center">
+          <h1 className="text-4xl font-bold font-outline-4">Kais Jessa</h1>
           <p className="py-3 font-outline-4 text-xl">
             Full Stack Software Developer
           </p>
