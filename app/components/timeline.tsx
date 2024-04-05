@@ -6,12 +6,14 @@ const Timeline = ({
   date,
   position,
   description,
+  technologies,
 }: {
   index: number;
   name: string;
   date: string;
   position: string;
   description: string[];
+  technologies: string[];
 }) => {
   return (
     <li>
@@ -40,9 +42,13 @@ const Timeline = ({
         <time className="font-mono italic">{date}</time>
         <div className="text-xl font-black">{name}</div>
         <div className="text-md font-bold">{position}</div>
-        <ul>
+        <div className="text-sm">
+          <span className="font-bold">Technologies used: </span>
+          <span className="italic">{technologies.join(", ")}</span>
+        </div>
+        <ul className="text-md">
           {description.map((el, i) => (
-            <li className="text-md p-2" key={i}>
+            <li className="py-2" key={i}>
               {el}
             </li>
           ))}

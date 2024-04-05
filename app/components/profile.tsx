@@ -4,7 +4,7 @@ import Image from "next/image";
 const Profile = () => {
   return (
     <div className="hero flex-col">
-      <div className="card mt-8 mb-4 bg-base-100 shadow-xl hero-content flex-col md:flex-row">
+      <div className="card mt-8 mb-4 p-8 bg-base-100 shadow-xl hero-content flex-col md:flex-row">
         <div
           className="tooltip tooltip-bottom hover:tooltip-open"
           data-tip="Kais Jessa"
