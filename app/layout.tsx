@@ -20,7 +20,7 @@ export default function RootLayout({
       <html
         data-theme="light"
         lang="en"
-        style={{ scrollBehavior: "smooth", scrollPaddingTop: "5rem" }}
+        style={{ scrollBehavior: "smooth", scrollPaddingTop: "5.5em" }}
       >
         <head></head>
         <body className="bg-pattern bg-base-200 ">

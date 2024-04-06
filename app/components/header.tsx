@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import {
@@ -11,25 +13,28 @@ import { MdEmail } from "react-icons/md";
 
 const Socials = () => {
   return (
-    <div className="flex gap-2">
+    <div className="join">
       <Link
         className="btn btn-sm btn-circle btn-ghost md:btn-md"
         href="https://github.com/kaisjessa"
-        passHref
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <FaGithub className="size-6 md:size-8" />
       </Link>
       <Link
         className="btn btn-sm btn-circle btn-ghost md:btn-md"
         href="https://www.linkedin.com/in/kais-jessa/"
-        passHref
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <FaLinkedin className="size-6 md:size-8" />
       </Link>
       <Link
         className="btn btn-sm btn-circle btn-ghost md:btn-md"
         href="mailto:kaisjessa@gmail.com"
-        passHref
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <MdEmail className="size-6 md:size-8" />
       </Link>
@@ -38,6 +43,11 @@ const Socials = () => {
 };
 
 const DropdownMenu = () => {
+  const closeDropdown = () => {
+    const elem = document.getElementById("my-drawer");
+    if (elem) elem.click();
+  };
+
   return (
     <div className="drawer">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -54,13 +64,22 @@ const DropdownMenu = () => {
         ></label>
         <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
           <li>
-            <a href="#">Home</a>
+            <a href="#" onClick={closeDropdown}>
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about" onClick={closeDropdown}>
+              About
+            </a>
           </li>
           <li>
-            <a href="#experience">Work Experience</a>
+            <a href="#experience" onClick={closeDropdown}>
+              Work Experience
+            </a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
           </li>
         </ul>
       </div>
@@ -70,8 +89,8 @@ const DropdownMenu = () => {
 
 const NavButtons = () => {
   return (
-    <div className="navbar-center">
-      <ul className="menu menu-horizontal px-1 font-semibold text-lg">
+    <div className="join navbar-center">
+      <ul className="menu menu-horizontal px-1 font-semibold text-lg ">
         <li>
           <a href="#">Home</a>
         </li>
@@ -80,6 +99,9 @@ const NavButtons = () => {
         </li>
         <li>
           <a href="#experience">Work Experience</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
         </li>
       </ul>
     </div>

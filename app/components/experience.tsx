@@ -7,7 +7,7 @@ const Experience = () => {
   const experienceText = data.experience.content;
   return (
     <div id="experience" className="hero flex-col">
-      <div className="card m-4 bg-base-100 shadow-xl hero-content flex-col md:flex-row">
+      <div className="card w-full m-4 bg-base-100 shadow-xl hero-content flex-col md:flex-row">
         <div className="card-body items-center text-center">
           <h2 className="card-title font-bold text-2xl">
             {data.experience.title}

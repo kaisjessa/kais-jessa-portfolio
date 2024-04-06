@@ -1,4 +1,5 @@
 import React from "react";
+import { IoIosCheckmarkCircle } from "react-icons/io";
 
 const Timeline = ({
   index,
@@ -19,38 +20,29 @@ const Timeline = ({
     <li>
       <hr />
       <div className="timeline-middle">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          className="h-5 w-5"
-        >
-          <path
-            fillRule="evenodd"
-            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-            clipRule="evenodd"
-          />
-        </svg>
+        <IoIosCheckmarkCircle className="size-5" />
       </div>
-      <div
-        className={
-          index % 2 === 0
-            ? "timeline-start text-start mb-10 md:text-end"
-            : "timeline-end text-start mb-10"
-        }
-      >
-        <time className="font-mono italic">{date}</time>
+      <div className="timeline-start text-start mb-10 md:text-end">
         <div className="text-xl font-black">{name}</div>
         <div className="text-md font-bold">{position}</div>
+        <time className="font-mono italic">{date}</time>
         <div className="text-sm">
-          <span className="font-bold">Technologies used: </span>
+          {/* <span className={technologies.length > 0 ? "font-bold" : "hidden"}>
+            Technologies used:{" "}
+          </span> */}
           <span className="italic">{technologies.join(", ")}</span>
         </div>
-        <ul className="text-md">
+
+        <ul className="md:hidden">
           {description.map((el, i) => (
-            <li className="py-2" key={i}>
-              {el}
-            </li>
+            <li key={i}>{el}</li>
+          ))}
+        </ul>
+      </div>
+      <div className="timeline-end text-start mb-10">
+        <ul className="hidden md:block">
+          {description.map((el, i) => (
+            <li key={i}>{el}</li>
           ))}
         </ul>
       </div>
