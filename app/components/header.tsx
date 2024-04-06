@@ -71,7 +71,7 @@ const DropdownMenu = () => {
           <FaAlignJustify className="size-6 md:size-10 black" />
         </label>
       </div>
-      <div className="drawer-side">
+      <div className="drawer-side z-10">
         <label
           htmlFor="my-drawer"
           aria-label="close sidebar"

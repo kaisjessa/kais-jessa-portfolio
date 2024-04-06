@@ -6,7 +6,7 @@ const data = {
     content: [
       "I'm a Toronto/Ottawa-based Software Developer with over eight years of programming experience. ",
       "I love solving problems and I'm always looking to learn new skills. ",
-      "I received my B.Sc. in Honours Mathematics and Computer Science from McGill University, where I engaged in classes including Honours Algorithms & Data Structures, Programming Languages & Paradigms and Operating Systems. ",
+      "In 2022, I received my B.Sc. in Honours Mathematics and Computer Science from McGill University, where I engaged in classes including Honours Algorithms & Data Structures, Programming Languages & Paradigms and Operating Systems. ",
       "My projects feature websites, games, computational mathematics and machine learning, and they often intersect with my other interests of classical music, visual art, trivia, and film.",
     ],
   },
@@ -71,7 +71,7 @@ const data = {
         link: "https://discord.com/oauth2/authorize?client_id=1221230338815033535",
         desc: "Discord bot to guess movies from film stills",
         git: "",
-        image: "/moviebot.png",
+        image: "/projects/moviebot.png",
         tags: ["Python", "PIL", "BeautifulSoup"],
       },
 
@@ -81,7 +81,7 @@ const data = {
         link: "https://github.com/kaisjessa/EvolutionaryPainter/blob/main/data/blue.gif",
         desc: "Reproduces paintings with geometric shapes",
         git: "https://github.com/kaisjessa/EvolutionaryPainter/tree/main",
-        image: "/evpaint.png",
+        image: "/projects/evpaint.png",
         tags: ["Java", "Processing", "AI"],
       },
       {
@@ -90,7 +90,7 @@ const data = {
         link: "https://discord.com/oauth2/authorize?client_id=1006026011378462800",
         desc: "Discord bot to guess artists from paintings",
         git: "https://github.com/kaisjessa/PaintingTriviaBot",
-        image: "/paintingbot.png",
+        image: "/projects/paintingbot.png",
         tags: ["Python", "PIL", "BeautifulSoup"],
       },
       {
@@ -99,7 +99,7 @@ const data = {
         link: "https://github.com/kaisjessa/Pentago-Twist-Bot/blob/main/report.pdf",
         desc: "Modified Monte Carlo tree search to play Pentago-Twist",
         git: "https://github.com/kaisjessa/Pentago-Twist-Bot",
-        image: "/pentago.png",
+        image: "/projects/pentago.png",
         tags: ["Java", "AI"],
       },
       {
@@ -108,7 +108,7 @@ const data = {
         link: "https://devpost.com/software/perfect-practice-7beprc",
         desc: "Tracks mistakes while practicing an instrument",
         git: "https://github.com/kaisjessa/McHacks-Project",
-        image: "/practice.png",
+        image: "/projects/practice.png",
         tags: ["Python", "AI", "Tensorflow"],
       },
       {
@@ -117,7 +117,7 @@ const data = {
         link: "https://devpost.com/software/blissfulbrowsing",
         desc: "Chrome extension that filters out toxicity from webpages",
         git: "https://github.com/kaisjessa/BlissfulBrowsing",
-        image: "/bb.png",
+        image: "/projects/bb.png",
         tags: ["JavaScript", "AI", "Tensorflow"],
       },
       {
@@ -126,7 +126,7 @@ const data = {
         link: "https://projecteuler.net/archives",
         desc: "Solving Project Euler problems in Python",
         git: "https://github.com/kaisjessa/Project-Euler",
-        image: "/euler.png",
+        image: "/projects/euler.png",
         tags: ["Python", "Math"],
       },
       {
@@ -135,7 +135,7 @@ const data = {
         link: "https://devpost.com/software/discordbot",
         desc: "Discord bot to create and manage group events",
         git: "",
-        image: "/eventbot.png",
+        image: "/projects/eventbot.png",
         tags: ["JavaScript", "Firebase"],
       },
     ],
