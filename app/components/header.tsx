@@ -14,30 +14,45 @@ import { MdEmail } from "react-icons/md";
 const Socials = () => {
   return (
     <div className="join">
-      <Link
-        className="btn btn-sm btn-circle btn-ghost md:btn-md"
-        href="https://github.com/kaisjessa"
-        target="_blank"
-        rel="noopener noreferrer"
+      <span
+        className="tooltip tooltip-bottom hover:tooltip-open"
+        data-tip="GitHub"
       >
-        <FaGithub className="size-6 md:size-8" />
-      </Link>
-      <Link
-        className="btn btn-sm btn-circle btn-ghost md:btn-md"
-        href="https://www.linkedin.com/in/kais-jessa/"
-        target="_blank"
-        rel="noopener noreferrer"
+        <Link
+          className="btn btn-sm btn-circle btn-ghost md:btn-md"
+          href="https://github.com/kaisjessa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub className="size-6 md:size-8" />
+        </Link>
+      </span>
+      <span
+        className="tooltip tooltip-bottom hover:tooltip-open"
+        data-tip="LinkedIn"
       >
-        <FaLinkedin className="size-6 md:size-8" />
-      </Link>
-      <Link
-        className="btn btn-sm btn-circle btn-ghost md:btn-md"
-        href="mailto:kaisjessa@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
+        <Link
+          className="btn btn-sm btn-circle btn-ghost md:btn-md"
+          href="https://www.linkedin.com/in/kais-jessa/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin className="size-6 md:size-8" />
+        </Link>
+      </span>
+      <span
+        className="tooltip tooltip-bottom hover:tooltip-open"
+        data-tip="Email"
       >
-        <MdEmail className="size-6 md:size-8" />
-      </Link>
+        <Link
+          className="btn btn-sm btn-circle btn-ghost md:btn-md"
+          href="mailto:kaisjessa@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <MdEmail className="size-6 md:size-8" />
+        </Link>
+      </span>
     </div>
   );
 };

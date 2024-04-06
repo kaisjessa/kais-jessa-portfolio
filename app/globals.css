@@ -13,12 +13,7 @@
     @apply [background-size:16px_16px];
     @apply bg-fixed;
   }
-  .font-outline-2 {
-    text-shadow: -1px -1px 0 oklch(var(--b1)), 1px -1px 0 oklch(var(--b1)),
-      -1px 1px 0 oklch(var(--b1)), 1px 1px 0 oklch(var(--b1));
-  }
-  .font-outline-4 {
-    text-shadow: -2px -2px 0 oklch(var(--b1)), 2px -2px 0 oklch(var(--b1)),
-      -2px 2px 0 oklch(var(--b1)), 2px 2px 0 oklch(var(--b1));
+  .project-icon {
+    @apply w-full;
   }
 }
