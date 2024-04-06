@@ -79,7 +79,7 @@ const data = {
         name: "Painting Trivia Bot",
         date: "Sep 2023",
         link: "",
-        desc: "Discord bot to guess artists from photos of paintings",
+        desc: "Discord bot to guess artists from paintings",
         git: "https://github.com/kaisjessa/PaintingTriviaBot",
         image: "/paintingbot.png",
         comingSoon: false,
