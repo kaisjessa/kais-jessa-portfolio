@@ -14,15 +14,19 @@ type project = {
 };
 
 const ProjectCard = (props: project) => {
-  const badgeColors = ["badge-info"];
+  const badgeColors = [
+    "badge-outline badge-secondary",
+    "badge-outline badge-primary",
+    "badge-outline",
+  ];
   return (
-    <div className="p-10 lg:w-1/2">
-      <div className="indicator w-full md:w-11/12">
-        <span className="indicator-item badge badge-accent">{props.date}</span>
+    <div className="p-4 lg:w-1/2">
+      <div className="indicator w-11/12">
+        <span className="indicator-item badge badge-neutral">{props.date}</span>
         <div className="card card-side bg-base-300 shadow-xl">
           <figure className="pl-10">
             <Image
-              className=""
+              className="mask mask-squircle"
               src={props.image}
               alt={props.name}
               width={128}
@@ -40,7 +44,7 @@ const ProjectCard = (props: project) => {
                 <Link
                   className={
                     props.git.length > 0
-                      ? "btn btn-sm btn-primary btn-square"
+                      ? "btn btn-sm btn-ghost btn-square"
                       : "btn btn-sm btn-disabled btn-square"
                   }
                   href={props.git}
@@ -59,7 +63,7 @@ const ProjectCard = (props: project) => {
                 <Link
                   className={
                     props.link.length > 0
-                      ? "btn btn-sm btn-secondary btn-square"
+                      ? "btn btn-sm btn-ghost btn-square"
                       : "btn btn-sm btn-disabled btn-square"
                   }
                   href={props.link}

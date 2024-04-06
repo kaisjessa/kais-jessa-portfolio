@@ -1,8 +1,10 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import data from "../data/text.js";
 import ProjectCard from "./projectCard";
 
 const Projects = () => {
+  const [showMore, setShowMore] = useState(false);
   const projectData = data.projects.content;
   return (
     <div id="projects" className="hero flex-col">
@@ -14,11 +16,19 @@ const Projects = () => {
           <div className="flex flex-col justify-center lg:flex-row lg:flex-wrap">
             {projectData.map((el, index) => (
               <>
-                <ProjectCard key={index} {...el} />
+                {index < 2 || showMore ? (
+                  <ProjectCard key={index} {...el} />
+                ) : null}
               </>
             ))}
           </div>
         </div>
+        <button
+          className="btn btn-wide btn-outline"
+          onClick={() => setShowMore(!showMore)}
+        >
+          {showMore ? "Show less" : "Show more"}
+        </button>
       </div>
     </div>
   );
