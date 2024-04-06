@@ -16,18 +16,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <React.StrictMode>
-      <html
-        data-theme="light"
-        lang="en"
-        style={{ scrollBehavior: "smooth", scrollPaddingTop: "5.5em" }}
-      >
-        <head></head>
-        <body className="bg-pattern bg-base-200 ">
-          {children}
-          <Footer />
-        </body>
-      </html>
-    </React.StrictMode>
+    <html
+      data-theme="light"
+      lang="en"
+      style={{ scrollBehavior: "smooth", scrollPaddingTop: "5.5em" }}
+    >
+      <head></head>
+      <body className="bg-pattern bg-base-200 ">
+        {children}
+        <Footer />
+      </body>
+    </html>
   );
 }

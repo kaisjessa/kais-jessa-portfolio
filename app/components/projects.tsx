@@ -11,7 +11,7 @@ const Projects = () => {
           <h2 className="card-title font-bold text-2xl">
             {data.projects.title}
           </h2>
-          <div className="flex flex-col justify-center md:flex-row md:flex-wrap">
+          <div className="flex flex-col justify-center lg:flex-row lg:flex-wrap">
             {projectData.map((el, index) => (
               <>
                 <ProjectCard key={index} {...el} />
