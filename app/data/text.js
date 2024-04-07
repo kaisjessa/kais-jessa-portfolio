@@ -34,7 +34,7 @@ const data = {
         technologies: [
           "Python",
           "Bash",
-          "Sqlite3",
+          "SQLite",
           "Azure",
           "Docker",
           "Jenkins",
@@ -72,7 +72,7 @@ const data = {
         desc: "Discord bot which displays film stills for users to guess",
         git: "",
         image: "/projects/moviebot.png",
-        tags: ["Python", "PIL", "BeautifulSoup"],
+        tags: ["Python", "SQLite", "BeautifulSoup"],
       },
 
       {
@@ -91,7 +91,7 @@ const data = {
         desc: "Discord bot which displays paintings for users to guess",
         git: "https://github.com/kaisjessa/PaintingTriviaBot",
         image: "/projects/paintingbot.png",
-        tags: ["Python", "PIL", "BeautifulSoup"],
+        tags: ["Python", "pandas", "BeautifulSoup"],
       },
       {
         name: "Pentago Twist Bot",
