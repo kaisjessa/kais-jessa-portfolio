@@ -21,7 +21,7 @@ const ProjectCard = (props: project) => {
   ];
   return (
     <div className="p-4 lg:w-1/2">
-      <div className="indicator w-11/12">
+      <div className="indicator w-full sm:w-11/12 h-full">
         <span className="indicator-item badge badge-neutral indicator-center md:indicator-end">
           {props.date}
         </span>

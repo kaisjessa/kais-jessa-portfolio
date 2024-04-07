@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import Footer from "./components/footer";
-import Header from "./components/header";
 import "./globals.css";
 import React from "react";
-import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Kais Jessa",

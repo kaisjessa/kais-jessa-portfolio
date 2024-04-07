@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for portfolio-2-long-wind-8958 on 2024-04-03T15:22:47-04:00
+# fly.toml app configuration file generated for kaisjessa on 2024-04-07T16:21:27-04:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'portfolio-2-long-wind-8958'
+app = 'kaisjessa'
 primary_region = 'ewr'
 
 [build]
