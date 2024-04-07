@@ -8,7 +8,7 @@ const Projects = () => {
   const projectData = data.projects.content;
   return (
     <div id="projects" className="hero flex-col">
-      <div className="card w-full m-4 bg-base-100 shadow-xl hero-content flex-col">
+      <div className="card w-fullm-4 bg-base-100 shadow-xl hero-content flex-col">
         <div className="card-body items-center text-center">
           <h2 className="card-title font-bold text-2xl">
             {data.projects.title}

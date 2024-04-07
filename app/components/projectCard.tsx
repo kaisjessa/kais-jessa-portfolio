@@ -28,7 +28,7 @@ const ProjectCard = (props: project) => {
         <div className="card w-full pt-10 bg-base-300 shadow-xl md:pt-0 md:card-side">
           <figure className="md:pl-10">
             <Image
-              className="flex mask mask-squircle"
+              className="sm:flex mask mask-squircle"
               src={props.image}
               alt={props.name}
               width={128}
@@ -37,7 +37,7 @@ const ProjectCard = (props: project) => {
           </figure>
           <div className="card-body text-left">
             <h2 className="card-title">{props.name}</h2>
-            <p className="text-md">{props.desc}</p>
+            <p className="text-sm sm:text-md">{props.desc}</p>
             <div className="card-actions">
               <div
                 className="tooltip tooltip-bottom hover:tooltip-open"

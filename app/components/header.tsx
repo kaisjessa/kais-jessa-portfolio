@@ -94,7 +94,9 @@ const DropdownMenu = () => {
             </a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects" onClick={closeDropdown}>
+              Projects
+            </a>
           </li>
         </ul>
       </div>
