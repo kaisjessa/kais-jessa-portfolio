@@ -4,7 +4,7 @@ const data = {
   about: {
     title: "About Me",
     content: [
-      "I'm a Toronto/Ottawa-based Software Developer with over eight years of programming experience. ",
+      "I'm a Toronto/Ottawa-based Full-Stack Software Developer with over eight years of programming experience. ",
       "I love solving problems and I'm always looking to learn new skills. ",
       "In 2022, I received my B.Sc. in Honours Mathematics and Computer Science from McGill University, where I engaged in classes including Honours Algorithms & Data Structures, Programming Languages & Paradigms and Operating Systems. ",
       "My projects feature websites, games, computational mathematics and machine learning, and they often intersect with my other interests of classical music, visual art, trivia, and film.",

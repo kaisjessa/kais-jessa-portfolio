@@ -19,7 +19,7 @@ const Profile = () => {
         </div>
         <div className="text-center">
           <h1 className="text-4xl font-bold">Kais Jessa</h1>
-          <p className="py-3 text-xl">Software Developer</p>
+          <p className="py-3 text-xl">Full-Stack Software Developer</p>
           <div
             className="tooltip tooltip-bottom hover:tooltip-open"
             data-tip="mailto:kaisjessa@gmail.com"
