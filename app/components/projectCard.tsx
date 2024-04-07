@@ -22,11 +22,13 @@ const ProjectCard = (props: project) => {
   return (
     <div className="p-4 lg:w-1/2">
       <div className="indicator w-11/12">
-        <span className="indicator-item badge badge-neutral">{props.date}</span>
-        <div className="card card-side bg-base-300 shadow-xl">
-          <figure className="pl-10">
+        <span className="indicator-item badge badge-neutral indicator-center md:indicator-end">
+          {props.date}
+        </span>
+        <div className="card w-full pt-10 bg-base-300 shadow-xl md:pt-0 md:card-side">
+          <figure className="md:pl-10">
             <Image
-              className="mask mask-squircle"
+              className="flex mask mask-squircle"
               src={props.image}
               alt={props.name}
               width={128}

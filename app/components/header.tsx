@@ -125,8 +125,8 @@ const NavButtons = () => {
 
 const Header = () => {
   return (
-    <header className="navbar z-20 bg-base-100 sticky top-0 bg-opacity-100">
-      <div className="navbar bg-base">
+    <header className="navbar z-20 bg-base-200 sticky top-0 bg-opacity-100">
+      <div className="navbar">
         <div className="navbar-start">
           <span className="lg:hidden">
             <DropdownMenu />

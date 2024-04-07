@@ -16,6 +16,7 @@ const Timeline = ({
   description: string[];
   technologies: string[];
 }) => {
+  const badgeColors = ["badge-secondary", "badge-primary", ""];
   return (
     <li>
       <hr />
@@ -27,10 +28,17 @@ const Timeline = ({
         <div className="text-md font-bold">{position}</div>
         <time className="font-mono italic">{date}</time>
         <div className="text-sm">
-          {/* <span className={technologies.length > 0 ? "font-bold" : "hidden"}>
-            Technologies used:{" "}
-          </span> */}
-          <span className="italic">{technologies.join(", ")}</span>
+          {technologies.map((tag, index) => (
+            <span
+              className={
+                "mx-0.5 badge badge-sm badge-outline " +
+                badgeColors[index % badgeColors.length]
+              }
+              key={index}
+            >
+              {tag}
+            </span>
+          ))}
         </div>
 
         <ul className="md:hidden">

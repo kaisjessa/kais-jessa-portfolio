@@ -22,7 +22,7 @@ export default function RootLayout({
       style={{ scrollBehavior: "smooth", scrollPaddingTop: "5.5em" }}
     >
       <head></head>
-      <body className="bg-pattern bg-base-200 ">
+      <body className="bg-pattern">
         {children}
         <Footer />
       </body>
