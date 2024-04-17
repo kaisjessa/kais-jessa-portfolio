@@ -28,14 +28,14 @@ const ProjectCard = (props: project) => {
         <div className="card w-full pt-10 bg-base-300 shadow-xl md:pt-0 md:card-side">
           <figure className="md:pl-10">
             <Image
-              className="sm:flex mask mask-squircle"
+              className="mask mask-squircle"
               src={props.image}
               alt={props.name}
               width={128}
               height={128}
             />
           </figure>
-          <div className="card-body text-left">
+          <div className="card-body text-left w-full md:w-1/2">
             <h2 className="card-title">{props.name}</h2>
             <p className="text-sm sm:text-md">{props.desc}</p>
             <div className="card-actions">

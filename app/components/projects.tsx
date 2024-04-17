@@ -14,13 +14,10 @@ const Projects = () => {
             {data.projects.title}
           </h2>
           <div className="flex flex-col justify-center lg:flex-row lg:flex-wrap">
-            {projectData.map((el, index) => (
-              <>
-                {index < 2 || showMore ? (
-                  <ProjectCard key={index} {...el} />
-                ) : null}
-              </>
-            ))}
+            {projectData.map(
+              (el, index) =>
+                (index < 4 || showMore) && <ProjectCard key={index} {...el} />
+            )}
           </div>
         </div>
         <button

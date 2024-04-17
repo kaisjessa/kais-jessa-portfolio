@@ -66,20 +66,36 @@ const data = {
     title: "Projects",
     content: [
       {
+        name: "Movie Connections",
+        date: "Apr 2024",
+        link: "https://movie-connections.fly.dev/puzzles/SnunBjv8cSflyqoS0e3I",
+        desc: "Website for creating and playing connections-style puzzles for movies",
+        git: "https://github.com/kaisjessa/movie-connections",
+        image: "/projects/amadeus.png",
+        tags: [
+          "Next.js",
+          "React",
+          "Typescript",
+          "TailwindCSS",
+          "Firebase",
+          "Docker",
+        ],
+      },
+      {
         name: "Movie Trivia Bot",
-        date: "Mar 2024 - Present",
+        date: "Mar 2024",
         link: "https://discord.com/oauth2/authorize?client_id=1221230338815033535",
         desc: "Discord bot which displays film stills for users to guess",
         git: "",
         image: "/projects/moviebot.png",
-        tags: ["Python", "SQLite", "BeautifulSoup"],
+        tags: ["Python", "SQLite", "BeautifulSoup", "discord.py", "Docker"],
       },
 
       {
         name: "Evolutionary Painter",
         date: "Feb 2024",
         link: "https://github.com/kaisjessa/EvolutionaryPainter/blob/main/data/blue.gif",
-        desc: "Reproduces paintings with geometric shapes",
+        desc: "Reproduces paintings with geometric shapes using evolutionary and genetic algorithms",
         git: "https://github.com/kaisjessa/EvolutionaryPainter/tree/main",
         image: "/projects/evpaint.png",
         tags: ["Java", "Processing", "AI"],
@@ -91,7 +107,7 @@ const data = {
         desc: "Discord bot which displays paintings for users to guess",
         git: "https://github.com/kaisjessa/PaintingTriviaBot",
         image: "/projects/paintingbot.png",
-        tags: ["Python", "pandas", "BeautifulSoup"],
+        tags: ["Python", "pandas", "BeautifulSoup", "discord.py", "Docker"],
       },
       {
         name: "Pentago Twist Bot",
@@ -121,6 +137,15 @@ const data = {
         tags: ["JavaScript", "AI", "Tensorflow"],
       },
       {
+        name: "Scarlatti Generator",
+        date: "Dec 2018",
+        link: "",
+        desc: "Generates music in the style of Domenico Scarlatti",
+        git: "https://github.com/kaisjessa/Scarlatti-Generator",
+        image: "/projects/scarlatti.png",
+        tags: ["Python", "TensorFlow", "Keras", "NumPy", "AI"],
+      },
+      {
         name: "Project Euler",
         date: "Sep 2018 - Present",
         link: "https://projecteuler.net/archives",
@@ -129,6 +154,7 @@ const data = {
         image: "/projects/euler.png",
         tags: ["Python", "Math"],
       },
+
       {
         name: "Event Bot",
         date: "Oct 2017",
