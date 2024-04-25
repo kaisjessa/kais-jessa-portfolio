@@ -82,6 +82,15 @@ const data = {
         ],
       },
       {
+        name: "Connect the Dots Solver",
+        date: "Apr 2024",
+        link: "",
+        desc: "Using OCR in Python to solve connect the dots puzzles",
+        git: "https://github.com/kaisjessa/dots-solver",
+        image: "/projects/dots.png",
+        tags: ["Python", "AI", "OCR", "OpenCV", "NumPy"],
+      },
+      {
         name: "Movie Trivia Bot",
         date: "Mar 2024",
         link: "https://discord.com/oauth2/authorize?client_id=1221230338815033535",
@@ -90,7 +99,6 @@ const data = {
         image: "/projects/moviebot.png",
         tags: ["Python", "SQLite", "BeautifulSoup", "discord.py", "Docker"],
       },
-
       {
         name: "Evolutionary Painter",
         date: "Feb 2024",
